@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [BetterPlace]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="betterplace.utilities.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="BetterPlace WebApp Test - OK URL(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="pageURL" value="https://www.bp42.com/de/donate/platform/projects/1114"/>
+    <classes>
+      <class name="betterplace.testCases.WebApplicationTests">
+        <methods>
+          <include name="setup"/>
+          <include name="t02_DonationFormFill"/>
+          <include name="tarDown"/>
+        </methods>
+      </class> <!-- betterplace.testCases.WebApplicationTests -->
+    </classes>
+  </test> <!-- BetterPlace WebApp Test - OK URL(failed) -->
+</suite> <!-- Failed suite [BetterPlace] -->
